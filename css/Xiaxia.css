@@ -2,11 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
+    
 }
 
-body {font-family: Verdana, sans-serif;}
-
-
+body {
+    
+    font-family: 'Fuzzy Bubbles', cursive;
+}
 
 .dbg{
     border: 1px solid red;
@@ -14,64 +16,62 @@ body {font-family: Verdana, sans-serif;}
 
 .nav{
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-color: rgb(255, 251, 253);
 }
-
-.nav .nav-left {
+/* 좌측상단 메뉴 바 */
+.nav-left  {
     float:left;
-    padding:30px;
-    font-size: 17px;
+    padding: 20px;
+    font-size: 12px;
     margin-left: 100px;
 }
 
-.nav-left li {
-    list-style-type: none;
-    float: left;
-    margin: 80px;
-    margin-left: 50px;
-    cursor: pointer;
-
-}
-
-#mnu1_sub {
-    display:none;
+.nav-left> a{
     
-}    
-#mnu1:hover #mnu1_sub {
-    display:block;
-    max-width: 30px;
-    padding: 10px;
+    margin-left: 20px;
     cursor: pointer;
+    text-decoration: none;
+    color: rgb(237, 162, 247);
+    
+}
+/* 로고 이미지 */
+.logo > img{
+    position: absolute;
+    margin-left: 400px;
+    width: 170px;
+
 }
 
+/* 우측 상단 메뉴 */
 .nav .nav-right{
     float: right;
     padding: 20px;
-    font-size: 17px;
+    font-size: 12px;
+    margin-right: 100px;
 }
 
 .nav .nav-right > a{
-    padding: 30px;
+    padding: 1px;
     text-decoration: none;
     color: inherit;
 }
-
+/* 우측상단 검색창 */
 .nav-right .search-container {
     margin-top: 25px;
 }
 
 .nav-right input[type=text] {
     padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
+    margin-top: 5px;
+    font-size: 15px;
     border: none;
 }
 
 .nav-right .search-container button {
     float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
+    padding: 2px 5px;
+    margin-top: 2px;
     margin-right: 16px;
     background: #ddd;
     font-size: 17px;
@@ -85,26 +85,89 @@ body {font-family: Verdana, sans-serif;}
 
 .btn {
     border: none;
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    font-size: 10px;
     cursor: pointer;
     border-radius: 10px;
 }
-.Login {background-color: #2196F3;}
-.Login:hover {background: #0b7dda;}
+.Login {background-color: #f7d9f7;}
+.Login:hover {background: #f7c7f7;}
 
-.mid{
-    width: 100%;
-    height: 600px;
+/* 중간 시작 */
+
+/* 중간 메뉴 바 */
+.mid-top {
+    
+    height: 30px;
+    margin-left: 352px;
+    color: rgb(15, 3, 17);
+    background-color: rgb(255, 251, 253);
 }
 
+.mid-top li {
+    list-style-type: none;
+    float: left;
+    margin-top: 10px;
+    margin-left: 150px;
+    cursor: pointer;
+    font-size: 17px;
+
+}
+
+
+.mid_top{
+    float: left;
+    width: 352px;
+    height: 30px;
+    background-color: rgb(255, 251, 253);
+}
+
+#mnu1_sub {
+    display:none;
+    z-index: 1;
+    position: absolute;
+    background-color: seashell;
+    
+}    
+#mnu1:hover #mnu1_sub {
+    display:block;
+    max-width: 120px;
+    padding: 10px;
+    cursor: pointer;
+    
+    
+}
+/* 중간 메뉴 하위 속성 */
+.sub > a{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.mid_mid{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(255, 251, 253);
+    
+}
+
+/* 슬라이드 뷰 시작 */
 .mySlides {display: none;}
 
 .slideshow-container {
-    max-width: 700px;
+    max-width: 1200px;
+    max-height: 700px;
     position: relative;
-    margin: auto;
+    margin-top: 10px;
+    margin-left: 350px;
+    
+
 }
 
 
@@ -150,6 +213,10 @@ body {font-family: Verdana, sans-serif;}
     animation-duration: 1.5s;
 }
 
+.mid_no{
+    width: 100%;
+    height: 400px;
+}
 
 
 
