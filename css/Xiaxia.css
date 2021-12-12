@@ -11,13 +11,14 @@ body {
 }
 
 .dbg{
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 .nav{
     width: 100%;
-    height: 200px;
-    background-color: rgb(255, 251, 253);
+    height: 150px;
+    background-color: white;
+    
 }
 /* 좌측상단 메뉴 바 */
 .nav-left  {
@@ -25,6 +26,8 @@ body {
     padding: 20px;
     font-size: 12px;
     margin-left: 100px;
+    font-family: 'Kings', cursive;
+    
 }
 
 .nav-left> a{
@@ -32,14 +35,23 @@ body {
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
-    color: rgb(237, 162, 247);
+    color: black;
     
 }
 /* 로고 이미지 */
-.logo > img{
+.logo {
     position: absolute;
-    margin-left: 400px;
-    width: 170px;
+    margin-left: 830px;
+    font-size: 60px;
+    margin-top: 70px;
+    font-family: 'Luxurious Script', cursive;
+    
+}
+
+.logo > a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 
 }
 
@@ -91,8 +103,29 @@ body {
     cursor: pointer;
     border-radius: 10px;
 }
-.Login {background-color: #f7d9f7;}
-.Login:hover {background: #f7c7f7;}
+    
+.Login{
+    text-decoration: none;
+    color: inherit;
+    background-color: white
+}
+.Login:hover {
+    text-decoration: none;
+    color: inherit;
+    background: #f7c7f7;
+}
+.Login > a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+.Login a:hover {
+    text-decoration: none;
+    color: inherit;
+    background: #f7c7f7;
+}
+
+
 
 /* 중간 시작 */
 
@@ -102,17 +135,17 @@ body {
     height: 30px;
     margin-left: 352px;
     color: rgb(15, 3, 17);
-    background-color: rgb(255, 251, 253);
+    background-color: white;
 }
 
 .mid-top li {
     list-style-type: none;
     float: left;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 150px;
     cursor: pointer;
     font-size: 17px;
-
+    font-family: 'Kings', cursive;
 }
 
 
@@ -120,14 +153,14 @@ body {
     float: left;
     width: 352px;
     height: 30px;
-    background-color: rgb(255, 251, 253);
+    background-color: white;
 }
 
 #mnu1_sub {
     display:none;
     z-index: 1;
     position: absolute;
-    background-color: seashell;
+    background-color: white;
     
 }    
 #mnu1:hover #mnu1_sub {
@@ -153,7 +186,7 @@ body {
 .mid_mid{
     width: 100%;
     height: 600px;
-    background-color: rgb(255, 251, 253);
+    background-color: white;
     
 }
 
@@ -161,11 +194,11 @@ body {
 .mySlides {display: none;}
 
 .slideshow-container {
-    max-width: 1200px;
-    max-height: 700px;
+    max-width: 1500px;
+    max-height: 600px;
     position: relative;
     margin-top: 10px;
-    margin-left: 350px;
+    margin-left: 210px;
     
 
 }
@@ -213,11 +246,393 @@ body {
     animation-duration: 1.5s;
 }
 
-.mid_no{
+/* //중앙 위클리 베스트 */
+.mid_wee{
     width: 100%;
-    height: 400px;
+    height: 100px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Kings', cursive;
+}
+.mid_wee > button{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px dotted rgb(202, 201, 201);
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: white;
+    font-family: 'Kings', cursive;
+}
+.mid_wee >button:hover{
+    background-color: rgb(223, 217, 217);
 }
 
 
 
+.mid_bo{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Kings', cursive;
+    
+}
 
+.mid_bo_1{
+    float: left;
+    width: 400px;
+    height: 250px;
+    margin-left: 180px;
+    background-color: rgb(248, 246, 245);
+}
+
+.mid_bo_1 > p{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.mid_bo_1> button{
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    border: none;
+    background-color: rgb(240, 189, 142);
+    cursor: pointer;
+}
+
+.mid_bo_1> button:hover{
+    background-color: wheat;
+}
+
+.mid_bo_2{
+    float: left;
+    width: 400px;
+    height: 250px;
+    margin-left: 200px;
+    position: relative;
+    
+    
+}
+
+.mid_bo_2::after{
+    content: "";
+    background: url(/img/mibo.png);
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.mid_bo_2 > a{
+    color: black;
+    text-align: center;
+    position: relative;
+    line-height: 250px;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.mid_bo_2 > a:hover{
+    background-color: white;
+    
+}
+
+
+
+.mid_bo_3{
+    float: left;
+    width: 400px;
+    height: 250px;
+    margin-left: 200px;
+    text-align: left;
+    border: 0.1px dotted black;
+    border-top-color: white ;
+    border-right-color: white;
+    
+    
+}
+
+.mid_bo_3 > p{
+    float: left;
+    margin-left: 30px;
+    
+}
+
+.mid_bo_3 > a{
+    float: right;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+
+}
+
+.mid_bo_3 hr{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.not > a{
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.not > p{
+    float: right;
+    margin-top: 30px;
+}
+/* 베스트 상품라인 사직 */
+.best{
+    text-align: center;
+    font-family: 'Kings', cursive;
+    font-size: 17px;
+}
+
+.mid_bo_best{
+    width: 100%;
+    height: 800px;
+
+}
+
+.poshow > a{
+    cursor: pointer;
+}
+
+.best_po1{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.best_po2{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.best_po3{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.best_po4{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+/* 아우터 사진라인시작 */
+.mid_beou{
+    text-align: center;
+    font-family: 'Kings', cursive;
+    font-size: 17px;
+}
+
+.mid_bo_outer{
+    width: 100%;
+    height: 800px;
+
+}
+
+.outer_po1{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.outer_po2{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.outer_po3{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.outer_po4{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.poshow {
+    display: none;
+    
+    max-width: 400px;
+    max-height: 600px;
+}
+
+
+.bot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.po1{
+    width: 400px;
+    height: 150px;
+    padding: 30px;
+    font-family: 'Kings', cursive;
+}
+
+.mid_bo_dress{
+    width: 100%;
+    height: 800px;
+
+}
+
+.dress_po1{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.dress_po2{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.dress_po3{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.dress_po4{
+    float: left;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.bottom_top{
+    width: 100%;
+    height: 80px;
+}
+
+.bottom{
+    width: 100%;
+    height: 300px;
+    font-family: 'Kings', cursive;
+}
+.bot_le{
+    float: left;
+    margin-left: 50px;
+    width: 600px;
+    height: 300px;
+    padding: 50px;
+    background-color: rgb(245, 244, 244);
+    border: 1px dotted;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: white ;
+}
+
+.bot_le > p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.bot_cen{
+    float: left;
+    width: 600px;
+    height: 300px;
+    padding: 50px;
+    font-family: 'Kings', cursive;
+    background-color: rgb(245, 244, 244);
+    border: 1px dotted;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: white ;
+}
+
+.bot_cen > h3{
+    text-align: center;
+}
+
+.bot_cen > p{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+}
+
+
+
+.bot_rig{
+    float: left;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(245, 244, 244);
+    padding: 50px;
+}
+
+.bot_rig > p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.bot_rig > i{
+    margin-top: 70px;
+    margin-left: 83px;
+    cursor: pointer;
+    
+    
+}

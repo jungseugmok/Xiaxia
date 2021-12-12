@@ -1,0 +1,424 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    
+    
+}
+
+body {
+    
+    font-family: 'Kings', cursive;
+}
+
+.dbg{
+    border: 0px solid red;
+}
+
+.nav{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    
+}
+/* 좌측상단 메뉴 바 */
+.nav-left  {
+    float:left;
+    padding: 20px;
+    font-size: 12px;
+    margin-left: 100px;
+    font-family: 'Kings', cursive;
+    
+}
+
+.nav-left> a{
+    
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    
+}
+/* 로고 이미지 */
+.logo{
+    position: absolute;
+    margin-left: 830px;
+    font-size: 60px;
+    margin-top: 70px;
+    font-family: 'Luxurious Script', cursive;
+}
+
+.logo > a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+}
+/* 우측 상단 메뉴 */
+.nav .nav-right{
+    float: right;
+    padding: 20px;
+    font-size: 12px;
+    margin-right: 100px;
+}
+
+.nav .nav-right > a{
+    padding: 1px;
+    text-decoration: none;
+    color: inherit;
+}
+/* 우측상단 검색창 */
+.nav-right .search-container {
+    margin-top: 25px;
+}
+
+.nav-right input[type=text] {
+    padding: 6px;
+    margin-top: 5px;
+    font-size: 15px;
+    border: none;
+}
+
+.nav-right .search-container button {
+    float: right;
+    padding: 2px 5px;
+    margin-top: 2px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-right .search-container button:hover {
+    background: #ccc;
+}
+
+.btn {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.Login {background-color: white}
+.Login:hover {background: #f7c7f7;}
+
+.Login > a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+.Login a:hover {
+    text-decoration: none;
+    color: inherit;
+    background: #f7c7f7;
+}
+
+/* 중간 메뉴 바 */
+.mid-top {
+    position: sticky;
+    top: 0px;
+    height: 30px;
+    margin-left: 352px;
+    color: rgb(15, 3, 17);
+    background-color: white;
+}
+
+.mid-top li {
+    list-style-type: none;
+    float: left;
+    
+    margin-top: 5px;
+    margin-left: 150px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Kings', cursive;
+}
+
+
+.mid_top{
+    float: left;
+    width: 352px;
+    height: 30px;
+    background-color: white;
+}
+
+#mnu1_sub {
+    display:none;
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    
+}    
+#mnu1:hover #mnu1_sub {
+    display:block;
+    max-width: 120px;
+    padding: 10px;
+    cursor: pointer;
+    
+    
+}
+/* 중간 메뉴 하위 속성 */
+.sub > a{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.mid_mid{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    
+}
+
+.top{
+    width: 100%;
+    height: 1000px;
+}
+
+.top_le{
+    float: left;
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 550px;
+    height: 800px;
+    
+}
+
+.top_rig{
+    float: left;
+    margin-left: 300px;
+    margin-top: 60px;
+    width: 550px;
+    height: 700px;
+    font-size: 15px;
+}
+
+.text{
+    width: 550px;
+    height: 350px;
+}
+
+.text >p{
+    font-family: 'Dongle', sans-serif;
+    font-size: 23px;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: 'Dongle', sans-serif;
+    font-size: 18px;
+    color: #444;
+    background-color: #fff;
+    padding: .6em 1.4em .5em .8em;
+    margin: 0;
+    border: 1px solid #aaa;
+    border-radius: .5em;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+select:hover {
+    border-color: #888;
+}
+
+select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px #f7c7f7;
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+}
+
+select:disabled {
+    opacity: 0.5;
+}
+
+label {
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    color: #444;
+}
+
+hr{
+    margin-top: 20px;
+}
+p{
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+}
+
+.top_bot >button{
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 20px;
+    border: 0.5px dotted;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.top_bot >button:hover{
+    background-color: #f7c7f7;
+}
+
+.mid_po{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.mid_with{
+    width: 100%;
+    height: 350px;
+    
+
+}
+
+
+.i{
+    margin-left: 140px;
+    float: left;
+    width: 300px;
+    height: 350px;
+}
+
+.mid_w_1{
+    width: 100%;
+    height: 100px;
+}
+
+.i_i{
+    margin-left: 140px;
+    float: left;
+    width: 300px;
+    height: 100px;
+}
+
+.i_i > p{
+    padding: 10px;
+}
+
+.mid_nav{
+    float: left;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 60px;
+    
+}
+
+.mid_nav > a{
+    margin-left: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5rem;
+}
+
+.mid_nav_a:hover{
+    background-color: thistle;
+    
+}
+
+.mid_nav > hr{
+    margin-left: 300px;
+}
+
+.mid_pro_in{
+    width: 100%;
+    height: 14700px;
+}
+
+.mid_pro_in > img{
+    margin-left: 550px;
+}
+
+.bottom_top{
+    width: 100%;
+    height: 80px;
+}
+
+.bottom{
+    width: 100%;
+    height: 300px;
+    font-family: 'Kings', cursive;
+}
+.bot_le{
+    float: left;
+    margin-left: 50px;
+    width: 600px;
+    height: 300px;
+    padding: 50px;
+    background-color: rgb(245, 244, 244);
+    border: 1px dotted;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: white ;
+}
+
+.bot_le > p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.bot_cen{
+    float: left;
+    width: 600px;
+    height: 300px;
+    padding: 50px;
+    font-family: 'Kings', cursive;
+    background-color: rgb(245, 244, 244);
+    border: 1px dotted;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: white ;
+}
+
+.bot_cen > h3{
+    text-align: center;
+}
+
+.bot_cen > p{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+}
+
+
+
+.bot_rig{
+    float: left;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(245, 244, 244);
+    padding: 50px;
+}
+
+.bot_rig > p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.bot_rig > i{
+    margin-top: 70px;
+    margin-left: 83px;
+    cursor: pointer;
+    
+    
+}
